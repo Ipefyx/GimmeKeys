@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gimme keys... plz</title>
+    <meta name="description" content=".">
+    <meta name="robots" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+      <h1>Gimme Keys...: A simple and dumb keys generator.</h1>
+    </header>
+    <div class="container">
+
+        <section>
+            <div class="button"><a href="javascript:location.reload(true)">Refresh</a></div>
+            <button onclick="loadKeys()">Generate keys</button>
+            <div class="params">
+              <div class="param"><input type="number" id="num-param-length" value=10 min=1 max=30> <span class="param-name"> Keys length<span></div>
+              <div class="param"><input type="number" id="num-param-amount" value=1 min=1 max=100> <span class="param-name"> Amount of keys<span></div>
+              <div class="param"><input type="checkbox" id="chk-param-number" checked> <span class="param-name"> Use numbers (0123456789)<span></div>
+              <div class="param"><input type="checkbox" id="chk-param-lowercase" checked> <span class="param-name"> Use lower case (abcdefghijklmnopqrstuvwxyz)<span></div>
+              <div class="param"><input type="checkbox" id="chk-param-uppercase" unchecked> <span class="param-name"> Use upper case (ABCDEFGHIJKLMNOPQRSTUVWXYZ)<span></div>
+              <div class="param"><input type="checkbox" id="chk-param-special" unchecked=false> <span class="param-name"> Use specials chars (`~!@#$%^*()-=_+[]{}|\':",./\<\>?&)<span></div>
+            </div>
+
+            <textarea type="text" id="txt_keys" class="keysbox" rows="20" cols="60">0123456789</textarea>
+
+        </section>
+
+        <footer><p>by Ipefyx</p></footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
